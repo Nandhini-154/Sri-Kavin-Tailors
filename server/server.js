@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: "https://sri-kavins-tailors.netlify.app/"
+    origin: "https://sri-kavins-tailors.netlify.app"
 }));
 
 app.use(express.json());
