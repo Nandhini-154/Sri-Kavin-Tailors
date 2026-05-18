@@ -14,7 +14,7 @@ const Catalogue = () => {
 
     useEffect(() => {
 
-        axios.get("http://localhost:5000/api/catalogue")
+        axios.get("https://sri-kavin-tailors.onrender.com/api/catalogue")
 
             .then((res) => {
 
