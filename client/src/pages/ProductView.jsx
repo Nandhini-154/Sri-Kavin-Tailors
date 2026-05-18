@@ -16,7 +16,7 @@ const ProductView = () => {
             try {
 
                 const res = await axios.get(
-                    `http://localhost:5000/api/catalogue/${id}`
+                    `https://sri-kavin-tailors.onrender.com/api/catalogue/${id}`
                 );
 
                 setItem(res.data);
