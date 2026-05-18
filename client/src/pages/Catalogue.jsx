@@ -152,8 +152,8 @@ const Catalogue = () => {
                                 className="whatsapp-btn"
                                 onClick={() => {
 
-                                    const url =
-                                        `http://localhost:5173/product/${item._id}`;
+                                  const url =
+`https://sri-kavins-tailors.netlify.app/product/${item._id}`;
 
                                     const message =
                                         `Check this design 🔥\nModel ID: ${item.modelId}\n${url}`;
