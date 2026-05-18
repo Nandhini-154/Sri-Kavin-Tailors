@@ -22,7 +22,7 @@ const AdminList = () => {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/api/catalogue"
+                "https://sri-kavin-tailors.onrender.com/api/catalogue"
             );
 
             setItems(res.data);
@@ -51,7 +51,7 @@ const AdminList = () => {
         try {
 
             await axios.delete(
-                `http://localhost:5000/api/catalogue/${id}`
+                `https://sri-kavin-tailors.onrender.com/api/catalogue/${id}`
             );
 
             alert("Deleted Successfully");
@@ -82,7 +82,7 @@ const AdminList = () => {
             }
 
             await axios.put(
-                `http://localhost:5000/api/catalogue/${editItem._id}`,
+                `https://sri-kavin-tailors.onrender.com/api/catalogue/${editItem._id}`,
                 formData
             );
 
