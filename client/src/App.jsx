@@ -17,7 +17,11 @@ function App() {
             <Route path="/product/:id" element={<ProductView />} />
             <Route path="/manage" element={<AdminList />} />
         </Routes>
-
+  <div>
+       <p>
+    © 2026 Sri Kavin's Tailors. Some images used on this website are sourced from external resources. All respective copyrights belong to their original owners.
+</p>
+        </div>
     );
 }
 
