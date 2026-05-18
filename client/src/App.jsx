@@ -23,13 +23,13 @@ function App() {
 
             </Routes>
 
-            <div className="footer">
+            
 
                 <p>
                     © 2026 Sri Kavin's Tailors. Some images used on this website are sourced from external resources. All respective copyrights belong to their original owners.
                 </p>
 
-            </div>
+      
 
         </>
 
