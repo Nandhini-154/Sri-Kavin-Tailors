@@ -22,7 +22,7 @@ const AdminUpload = () => {
         try {
 
             await axios.post(
-                "http://localhost:5000/api/catalogue/upload",
+                "https://sri-kavin-tailors.onrender.com/api/catalogue/upload",
                 formData
             );
 
