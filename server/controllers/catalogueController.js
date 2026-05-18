@@ -1,4 +1,4 @@
-const Catalogue = require("../models/Catalogue");
+const Catalogue = require("../models/catalogue");
 
 const cloudinary = require("../utils/cloudinary");
 
