@@ -44,23 +44,25 @@ const Catalogue = () => {
 
     // FILTER
 
-    const filterCategory = (category) => {
+  const filterCategory = (category) => {
 
-        if (category === "All") {
+    if (category === "All") {
 
-            setFilteredItems(items);
+        setFilteredItems(items);
 
-        }
+    }
 
-        else {
+    else {
 
-            const filtered = items.filter(
-                (item) => item.mainCategory === category
-            );
+        const filtered = items.filter(
+            (item) =>
+                item.mainCategory === category ||
+                item.subCategory === category
+        );
 
-            setFilteredItems(filtered);
-        }
-    };
+        setFilteredItems(filtered);
+    }
+};
 
     return (
 
@@ -100,21 +102,37 @@ const Catalogue = () => {
 
             {/* FILTER BUTTONS */}
 
-            <div className="filter-buttons">
+<div className="filter-buttons">
 
-                <button onClick={() => filterCategory("All")}>
-                    All
-                </button>
+    <button onClick={() => filterCategory("All")}>
+        All
+    </button>
 
-                <button onClick={() => filterCategory("Blouse Designs")}>
-                    Blouse
-                </button>
+    <button onClick={() => filterCategory("Blouse Designs")}>
+        Blouse
+    </button>
 
-                <button onClick={() => filterCategory("Chudi Designs")}>
-                    Chudi
-                </button>
+    <button onClick={() => filterCategory("Chudi Designs")}>
+        Chudi
+    </button>
 
-            </div>
+    <button onClick={() => filterCategory("Blouse Hand Designs")}>
+        Blouse Hand
+    </button>
+
+    <button onClick={() => filterCategory("Blouse Back Neck Designs")}>
+        Blouse Back Neck
+    </button>
+
+    <button onClick={() => filterCategory("Chudi Hand Designs")}>
+        Chudi Hand
+    </button>
+
+    <button onClick={() => filterCategory("Chudi Neck Designs")}>
+        Chudi Neck
+    </button>
+
+</div>
 
             {/* GRID */}
 
